@@ -1,4 +1,5 @@
 // Home.js
+import '../css/home.css'
 import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -7,20 +8,25 @@ import 'swiper/css/pagination';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 import { useTranslation } from 'react-i18next';
+import { useAllContext } from "../Context";
+
+import { IoTriangleSharp } from "react-icons/io5";
 
 // img
 import Zizag from '../img/Zizag dark blu.svg'
 import orderprice from '../img/orderprice.svg'
+import orderprice2 from '../img/orderprice-en.svg'
 
 const Home = () => {
   const { t } = useTranslation();
+  const { language } = useAllContext();
 
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
   return (
     <div className="home">
-      <div className="landing container">
+      <div className="landing">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={20}
@@ -63,9 +69,9 @@ const Home = () => {
         <img className='zigzag' src={Zizag} alt="" />
         <a href='' className="price">
           <div className="image">
-            <img src={orderprice} alt="" />
+            <img src={language == 'ar' ? orderprice : orderprice2} alt="" />
           </div>
-          <span className="shape"></span>
+          <IoTriangleSharp className='shape'/>
         </a>
       </div>
       <div className="what-we-do">

@@ -15,7 +15,7 @@ export function Context({ children }) {
   }, [i18n.language]);
 
   return (
-    <AllContext.Provider value={{ language, setLanguage, direction, }}>
+    <AllContext.Provider value={{ language, setLanguage, direction }}>
       {children}
     </AllContext.Provider>
   );

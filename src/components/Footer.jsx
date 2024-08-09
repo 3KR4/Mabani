@@ -47,8 +47,8 @@ export default function Footer() {
             <a href="https://www.instagram.com/mabani.tatweer/"><img src={insta} alt="" /></a>
             <a href="https://www.linkedin.com/company/102943389/"><img src={linkedIn} alt="" /></a>
             <a href="https://www.snapchat.com/add/mabanialtatweer?share_id=JLPIANhbDzQ&locale=en-EG"><img src={snapChat} alt="" /></a>
-            <a href="https://www.youtube.com/@MabaniCompany"><img src={twiter} alt="" /></a>
-            <a href="https://x.com/MabaniAltatweer"><img src={YouTube} alt="" /></a>
+            <a href="https://x.com/MabaniAltatweer"><img src={twiter} alt="" /></a>
+            <a href="https://www.youtube.com/@MabaniCompany"><img src={YouTube} alt="" /></a>
           </div>
         </div>
         <div className="links">

@@ -1,0 +1,123 @@
+/*! ========== Contact ========== */
+
+.contactUs {
+  margin-bottom: 55px;
+}
+::placeholder {
+  text-transform: capitalize;
+}
+.contactUs > h1 {
+  text-align: center;
+  color: #0f4702;
+  max-width: 18%;
+  line-height: 1.3;
+  font-size: 31px;
+  margin: 20px auto -8px;
+}
+.contactUs .mapHolder {
+  width: 100%;
+  height: 440px;
+  padding: 0;
+  margin: 33px 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.contactUs form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+} 
+.App.rtl .contactUs form {
+  align-items: flex-end;
+}
+.contactUs form h3 {
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+}
+.contactUs form .hold {
+  display: flex;
+  direction: rtl;
+  width: 100%;
+  margin-bottom: 12px;
+}
+.contactUs form label {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.contactUs form .hold:nth-child(2) label,
+.contactUs form .hold:nth-child(3) label {
+  width: 80px;
+}
+.contactUs form .hold:nth-child(4) label,
+.contactUs form .hold:nth-child(5) label {
+  width: 180px;
+}
+.contactUs form .inputHolder {
+  width: 100%;
+}
+.contactUs form .inputHolder input {
+  border: 2px solid;
+  padding: 14px;
+  font-size: 15px;
+  width: 100%;
+  border-radius: 10px;
+}
+.App.ltr .contactUs form .hold {
+  direction: ltr;
+}
+.App.ltr .contactUs form .hold label {
+  width: 87px;
+}
+.contactUs form .inputHolder span {
+  font-weight: 700;
+  margin: 0 10px 0;
+  text-transform: capitalize;
+}
+.contactUs form .hold.textarea {
+  flex-direction: column;
+  align-items: center;
+}
+.contactUs form .hold.textarea textarea {
+  width: 100%;
+  font-family: 'Cairo';
+  padding: 15px;
+  font-size: 15px;
+  border: 2px solid;
+  border-radius: 5px;
+}
+.contactUs form .hold.textarea label {
+  margin: 1px 0 10px;
+  font-size: 24px;
+}
+.contactUs form button {
+  background: #2e353e;
+  color: #abaeb1;
+  font-size: 24px;
+  font-family: 'Cairo';
+  font-weight: 800;
+  width: 100%;
+  padding: 26px 0 28px;
+  transition: 0.3s;
+  color: #abaeb1;
+}
+.contactUs form button:hover {
+  background: var(--hover-color);
+  color: #5c4e17;
+}
+
+@media(max-width:992px) {
+  .contactUs > h1 {
+    max-width: unset;
+  }
+}
+@media(max-width:786px) {
+  .contactUs {
+    width: 100%;
+  }
+  .contactUs .mapHolder {
+    height: 280px;
+  }
+}
