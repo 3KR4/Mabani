@@ -124,7 +124,7 @@ const Home = () => {
 
           </div>
           <div className="side">
-            <h4>{t('Project management and engineering consultations')}</h4>
+            <h4>{t('Project management & engineering consultations')}</h4>
             <h4>{t('The furniture')}</h4>
           </div>
         </div>
@@ -132,7 +132,7 @@ const Home = () => {
       <div className="build ">
         <img className='engineer' src={require('../img/مهندس.png')} alt="" />
         <img className='zigzag' src={Zizag} alt="" />
-        <h1>{t('Project management and engineering consultations')}</h1>
+        <h1>{t('Project management & engineering consultations')}</h1>
       </div>
       <div className="implement container">
         <div className="top">

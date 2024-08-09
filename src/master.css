@@ -225,6 +225,8 @@ button {
   transform: translateY(4px);
 }
 
+
+
 /*! =========== HEADER =========== */
 
 header {
@@ -318,6 +320,7 @@ header .contnet .adds li {
 }
 .home .landing img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -489,6 +492,7 @@ header .contnet .adds li {
   text-align: center;
   font-size: 17px;
   transition: 0.3s;
+  line-height: 1.5;
   width: 89%;
 }
 .what-we-do .holder .card:hover img {
@@ -538,6 +542,24 @@ header .contnet .adds li {
   padding: 0 27px;
   color: var(--paragraph-color);
   margin-bottom: 25px;
+  transition: 0.3s;
+  position: relative;
+}
+.specialization .top .title::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 95%;
+  height: 0;
+  background: var(--section-color);
+  transition: 0.3s;
+  z-index: -1;
+  transform: translate(-50%,-50%);
+  border-radius: 30px;
+}
+.specialization .top .title:hover::before {
+  height: 85%;
 }
 .specialization .bottom {
   display: flex;
@@ -554,6 +576,23 @@ header .contnet .adds li {
   font-size: 22px;
   text-align: center;
   margin-top: 20px;
+  position: relative;
+}
+.specialization .bottom .title::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 0;
+  height: 110%;
+  border-radius: 30px;
+  background-color: var(--section-color);
+  transition: 0.3s;
+  z-index: -1;
+}
+.specialization .bottom .title:hover::before {
+  width: 110%;
 }
 .specialization .bottom h4 {
   background: #707070;
@@ -650,9 +689,14 @@ header .contnet .adds li {
   font-size: 48px;
   z-index: 5;
   max-width: 539px;
+  transition: 0.3s;
 }
 .App.rtl .build h1 {
   max-width: 478px;
+}
+.build h1:hover {
+  scale: 1.1;
+  color: var(--red-color);
 }
 
 /*! ============= implement ============ */ 
@@ -771,10 +815,15 @@ header .contnet .adds li {
   padding: 5px 0;
   text-align: right;
   padding-right: 70px;
+  transition: 0.3s;
 }
 .App.rtl .projects .sideTitle {
   border-radius: 50px 0 0 0;
   transform: translateX(2px);
+}
+.projects .sideTitle:hover {
+  font-weight: 900;
+  color: var(--main-color);
 }
 .projects .holder {
   display: grid;
@@ -866,9 +915,6 @@ footer .middle {
 footer .middle > img {
   width: 150px;
 }
-footer .middle .social {
-
-}
 footer .middle .social img {
   width: 44px;
 }
@@ -935,7 +981,142 @@ footer .links a {
   }
 }
 @media(max-width:786px) {
+  .home .landing {
+    width: 100%;
+  }
+  header .bar {
+    height: 42px;
+    margin-bottom: 8px;
+  }
+  header .social,
+  header .nav .changeLang {
+    position: absolute;
+    top: -45px;
+  }
+  header .nav .changeLang  {
+    right: 12px;
+    top: -44px;
+  }
+  header .contnet .main img:last-child {
+    width: 100%;
+  }
+  header .contnet .main img:first-child {
+    display: none;
+  }
+  .phones {
+    margin-top: 3px;
+  }
+  .App.rtl header .contnet .adds li:nth-child(2) {
+    display: block;
+  }
+  header .contnet .adds li:nth-child(2),
+  header .contnet .adds li:nth-child(3),
+  header .contnet .adds li:nth-child(4) {
+    display: none;
+  }
+  .home .text h1 {
+    font-size: 30px !important;
+  }
+  .home .text {
+    bottom: 33px;
+  }
+  .home .text p {
+    font-size: 12px;
+  }
+  .home .landing .swiper-slide {
+    height: 275px;
+  }
 
+  .home .text::before {
+    left: 39%;
+    top: 60%;
+    box-shadow: -1px 0px 139px 53px #000000;
+  }
+  .custom-prev img,
+  .custom-next img {
+    width: 25px !important;
+  }
+  .swiper-pagination {
+    bottom: -2px !important;
+  }
+  .custom-next {
+    right: 5px;
+  }
+  .priceList {
+    height: 140px;
+  }
+  .priceList .price {
+    bottom: 4px;
+  }
+  .priceList .price img {
+    width: 95px;
+  }
+  .main-title {
+    font-size: 25px;
+  }
+  .what-we-do .back {
+    height: 410px;
+  }
+  .specialization {
+    width: 100%;
+  }
+  .specialization .top {
+    height: 248px;
+  }
+  .specialization .top .title {
+    font-size: 28px; 
+  }
+  .specialization .bottom .title {
+    max-width: 90%;
+    font-size: 16px;
+  }
+  .specialization .main, .specialization .side {
+    width: 95%;
+    border: 2px solid var(--border-color);
+    padding: 24px 20px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 14px;
+    margin-top: 55px;
+    gap: 77px;
+  }
+  .specialization .side {
+    gap: 7px;
+  }
+  .App.rtl .build {
+    overflow: hidden;
+  }
+  .App.rtl .build h1 {
+    max-width: 60%;
+    font-size: 20px;
+  }
+  .build .engineer {
+    left: 3%;
+    width: 43%;
+    margin-top: 60px;
+  }
+  .implement .top,
+  .implement .bottom {
+    width: 100%;
+    padding: 0 12px;
+  }
+  .implement p.middle {
+    max-width: 95%;
+    padding: 0 8px;
+  }
+  .projects .sideTitle {
+    width: 88%;
+  }
+  .projects h1 {
+    font-size: 38px;
+  }
+  .scrollBtn.show {
+    right: 6%;
+    bottom: 3%;
+  }
+  footer .middle {
+    margin-top: 19px;
+  }
 }
 @media(max-width:400px) {
 
