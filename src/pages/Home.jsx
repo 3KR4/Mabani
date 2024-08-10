@@ -67,7 +67,7 @@ const Home = () => {
       <div className="priceList">
         <img className='bigImg' src={require('../img/pricelist.png')} alt="" />
         <img className='zigzag' src={Zizag} alt="" />
-        <a href='' className="price">
+        <a href='/contact' className="price">
           <div className="image">
             <img src={language == 'ar' ? orderprice : orderprice2} alt="" />
           </div>
@@ -154,7 +154,7 @@ const Home = () => {
             <li>{t('Supervising and following up on projects at all stages')}</li>
             <li>{t('Engineering consulting for projects with the availability of a response service using social media to respond directly to customers')}</li>
           </ul>
-          <a href="">{t('Share your thoughts with us')}</a>
+          <a href="/contact">{t('Share your thoughts with us')}</a>
         </div>
       </div>
       <div className="projects">
