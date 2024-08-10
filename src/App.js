@@ -9,7 +9,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Blogs from './pages/Blogs'
 import SingleBlog from './pages/SingleBlog'
-import SingleProject from './pages/SingleProject'
+import Project from './pages/Project'
 
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -20,17 +20,15 @@ function App() {
 
   return (
     <div className={`App ${direction}`}>
-
       <Header/>
       <Routes>
         <Route index element={<Home/>} />
         <Route path="/home" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>}/>
-        {/* 
-        <Route path="/blog" element={<Blogs/>}/>
+        <Route path="/blogs" element={<Blogs/>}/>
         <Route path="/singleBlog/:blogId" element={<SingleBlog/>}/>
-        <Route path="/singleProject/:projectId" element={<SingleProject/>}/> */}
+        <Route path="/projects/:project" element={<Project/>}/>
       </Routes> 
       <Footer/>
     </div>

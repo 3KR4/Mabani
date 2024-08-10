@@ -32,6 +32,7 @@ body {
   gap: 10px;
   color: white;
   flex-direction: column;
+  overflow-x: hidden;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -346,6 +347,8 @@ footer {
   background: #3f4956;
   margin-top: 28px;
   padding: 10px 0;
+  position: relative;
+  z-index: 5;
 }
 
 footer .container {
@@ -374,6 +377,7 @@ footer .middle {
   align-items: center;
   gap: 10px;
   margin-top: -80px;
+  transform: translateX(28px);
 }
 footer .middle > img {
   width: 150px;
@@ -385,25 +389,10 @@ footer .links a {
   font-size: 18px;
 }
 
-@media(max-width:1600px) {
-  .home .landing .swiper-slide {
-    height: 580px;
-  }
-}
 
-
-@media(max-width:1400px) {
-
-}
-@media(max-width:1200px) {
-
-}
 @media(max-width:992px) {
   .App:has(header.fixedHed) {
     margin-top: 305px;
-  }
-  .home .landing .swiper-slide {
-    height: 400px;
   }
   header .contnet .adds li:first-child,
   header .contnet .adds li:last-child {
@@ -415,49 +404,32 @@ footer .links a {
   header .contnet .main img:first-child {
     width: 147px;
 }
-  .priceList {
-    height: 244px;
-  }
-  .what-we-do .back .main-title {
-    max-width: 87%;
-  }
-  .specialization .top span.one {
-    height: 37px;
-  }
+
+
+
   .build h1 {
     font-size: 37px;
     bottom: 9%;
     right: -2%;
   }
-  .implement a {
-    align-self: center;
-    margin-top: 27px;
-  }
-  .projects .sideTitle {
-    padding: 9px 55px 9px 0;
-    width: 57%;
-  }
-  .projects h1 {
-    margin: 18px 0 -4px;
-  }
+
+
   footer .container {
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
-  .implement p.middle {
-    text-align: left;
-    max-width: 78%;
+
+  footer .middle {
+    transform: translateX(0px);
   }
-  .App.rtl .implement p.middle {
-    text-align: right;
-  }
+
 }
+
+
 @media(max-width:786px) {
+
   .App:has(header.fixedHed) {
     margin-top: 196px;
-}
-  .home .landing {
-    width: 100%;
   }
   header .bar {
     height: 42px;
@@ -495,24 +467,9 @@ footer .links a {
   header .contnet .adds li:nth-child(4) {
     display: none;
   }
-  .home .text h1 {
-    font-size: 30px !important;
-  }
-  .home .text {
-    bottom: 33px;
-  }
-  .home .text p {
-    font-size: 12px;
-  }
-  .home .landing .swiper-slide {
-    height: 275px;
-  }
 
-  .home .text::before {
-    left: 39%;
-    top: 60%;
-    box-shadow: -1px 0px 139px 53px #000000;
-  }
+
+
   .custom-prev img,
   .custom-next img {
     width: 25px !important;
@@ -523,59 +480,13 @@ footer .links a {
   .custom-next {
     right: 5px;
   }
-  .priceList {
-    height: 140px;
-  }
-  .priceList .price {
-    bottom: 4px;
-  }
-  .priceList .price img {
-    width: 95px;
-  }
+
   .main-title {
     font-size: 25px;
   }
-  .what-we-do .back {
-    height: 410px;
-  }
-  .specialization {
-    width: 100%;
-  }
-  .specialization .top {
-    height: 248px;
-  }
-  .specialization .top .title {
-    font-size: 28px; 
-  }
-  .specialization .bottom .title {
-    max-width: 90%;
-    font-size: 16px;
-  }
-  .specialization .main, .specialization .side {
-    width: 95%;
-    border: 2px solid var(--border-color);
-    padding: 24px 20px;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 14px;
-    margin-top: 55px;
-    gap: 77px;
-  }
-  .specialization .side {
-    gap: 7px;
-  }
-  .App.rtl .build {
-    overflow: hidden;
-  }
-  .App.rtl .build h1 {
-    max-width: 60%;
-    font-size: 20px;
-  }
-  .build .engineer {
-    left: 3%;
-    width: 43%;
-    margin-top: 60px;
-  }
+
+
+
   .implement .top,
   .implement .bottom {
     width: 100%;
@@ -585,12 +496,7 @@ footer .links a {
     max-width: 95%;
     padding: 0 8px;
   }
-  .projects .sideTitle {
-    width: 88%;
-  }
-  .projects h1 {
-    font-size: 38px;
-  }
+
   .scrollBtn.show {
     right: 6%;
     bottom: 3%;
@@ -601,4 +507,52 @@ footer .links a {
 }
 @media(max-width:400px) {
 
+}
+
+
+
+
+
+
+
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  margin-top: 38px;
+  margin-bottom: 25px;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination li a {
+  padding: 4px 15px;
+  border: 1px solid #ddd;
+  color: var(--title-color);
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  height: 39px;
+}
+.pagination li a svg {
+  font-size: 22px;
+}
+.pagination li.active a {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.pagination li a:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+.pagination li a:hover svg {
+  color: white;
 }

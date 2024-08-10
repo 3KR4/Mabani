@@ -386,11 +386,20 @@
   bottom: 5%;
   right: 7%;
   text-align: center;
+  color: white;
   line-height: 1.3;
   font-size: 48px;
   z-index: 5;
   max-width: 539px;
   transition: 0.3s;
+}
+.build h1::before {
+  content: '';
+  position: absolute;
+  left: 34%;
+  top: 36%;
+  z-index: -1;
+  box-shadow: 150px 0px 321px 174px #0000008f;
 }
 .App.rtl .build h1 {
   max-width: 478px;
@@ -577,4 +586,169 @@
   width: 100%;
   font-size: 48px;
   color: var(--hover-color);
+}
+
+@media(max-width:1600px) {
+  .home .landing .swiper-slide {
+    height: 580px;
+  }
+}
+
+
+@media(max-width:992px) {
+  .home .landing .swiper-slide {
+    height: 400px;
+  }
+
+  .home .landing .swiper-slide {
+    height: 400px;
+  }
+  .home .text h1 {
+    font-size: 73px !important;
+  } 
+  .projects .sideTitle {
+    width: 43%;
+  }
+  .implement a {
+    align-self: center;
+    margin-top: 27px;
+  }
+  .implement p.middle {
+    text-align: left;
+    max-width: 78%;
+  }
+  .App.rtl .implement p.middle {
+    text-align: right;
+  }
+  .projects .sideTitle {
+    padding: 9px 55px 9px 0;
+    width: 57%;
+  }
+  .projects h1 {
+    margin: 18px 0 -4px;
+  }
+  .projects .sideTitle {
+    width: 47%;
+  }
+  .specialization .top span.one {
+    height: 37px;
+  }
+  .what-we-do .back .main-title {
+    max-width: 87%;
+  }
+  .priceList {
+    height: 244px;
+  }
+  .implement .bottom,
+  .implement p.middle,
+  .implement .top {
+    width: 90%;
+    max-width: unset;
+  }
+}
+
+@media(max-width:786px)  {
+  .home .landing {
+    width: 100%;
+  }
+  .home .landing .swiper-slide {
+    height: 420px;
+  }
+  .home .text h1 {
+    font-size: 30px !important;
+  }
+  .home .text {
+    bottom: 33px;
+  }
+  .home .text p {
+    font-size: 18px !important;
+  }
+  .App.ltr .home .text p {
+    font-size: 14px !important;
+}
+  .home .text::before {
+    left: 39%;
+    top: 60%;
+    box-shadow: -1px 0px 139px 53px #000000;
+  }
+  .App.ltr .what-we-do .back .main-title {
+    font-size: 22px;
+  }
+  .projects .sideTitle {
+    width: 90%;
+  }
+  .what-we-do .holder p {
+    width: 83%;
+  }
+  .implement .bottom,
+  .implement p.middle,
+  .implement .top {
+    width: 98%;
+    max-width: unset;
+  }
+  .implement .top {
+    padding: 10px 21px 22px;
+  }
+  .implement .bottom {
+    margin-bottom: 40px;
+  }
+  .projects .sideTitle {
+    width: 88%;
+  }
+  .projects h1 {
+    font-size: 38px;
+  }
+  .specialization {
+    width: 100%;
+  }
+  .specialization .top {
+    height: 248px;
+  }
+  .specialization .top .title {
+    font-size: 28px; 
+  }
+  .specialization .bottom .title {
+    width: 90%;
+    font-size: 16px;
+  }
+  .specialization .main, .specialization .side {
+    width: 95%;
+    border: 2px solid var(--border-color);
+    padding: 24px 20px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 14px;
+    margin-top: 55px;
+    gap: 77px;
+  }
+  .specialization .side {
+    gap: 7px;
+  }
+  .what-we-do .back {
+    height: 410px;
+  }
+  .priceList {
+    height: 140px;
+  }
+  .priceList .price {
+    bottom: 4px;
+  }
+  .priceList .price img {
+    width: 95px;
+    height: 95px;
+  }
+  .App.rtl .build {
+    overflow: hidden;
+  }
+  .App .build h1 {
+    max-width: 60%;
+    font-size: 20px;
+    bottom: 7%;
+    right: 0%;
+  }
+  .build .engineer {
+    left: 3%;
+    width: 43%;
+    margin-top: 60px;
+  }
 }

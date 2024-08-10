@@ -200,7 +200,44 @@ align-items: flex-start;
   .App.ltr .about .top .head {
     margin-left: 10px;
   }
+
   .iso .lastiso {
     width: 100%;
+  }
+  .about .backImg img {
+    width: 100%;
+  }
+}
+@media(max-width:786px) {
+  .about .top .head {
+    width: 94%;
+  }
+  .about .top .title {
+    font-size: 27px !important;
+    line-height: 1.7 !important;
+    margin: 39px 3px 14px !important;
+  }
+  .App.ltr .about .top .title,
+  .App.rtl .about .top .title {
+    width: 100% !important;
+    padding: 0 14px;
+  }
+  .App.ltr .about .top .title {
+    font-size: 22px !important;
+  }
+  .iso .topTitle {
+    padding: 0 20px;
+    border-radius: 15px;
+    font-size: 30px;
+  }
+  .iso .sideTitle {
+    font-size: 21px;
+  }
+  .App.ltr .iso .sideTitle {
+    margin-left: 0;
+  }
+  .App.ltr .about .top .head h1 {
+    font-size: 95px;
+    margin-top: -60px;
   }
 }

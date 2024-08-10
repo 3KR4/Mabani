@@ -161,31 +161,31 @@ const Home = () => {
         <div className="sideTitle">{t('Company projects')}</div>
         <div className="holder container">
           <div className="card">
-            <a href='' className="image">
+            <a href="/projects/design" className="image">
               <img src={require('../img/projects 1.jpg')} alt="" />
             </a>
-            <a href="">{t('view projects')}</a>
+            <a href="/projects/design">{t('view projects')}</a>
             <h3>{t('Design')}</h3>
           </div>
           <div className="card">
-            <a href='' className="image">
+            <a href="/projects/contracting" className="image">
               <img src={require('../img/projects 2.jpg')} alt="" />
             </a>
-            <a href="">{t('view projects')}</a>
+            <a href="/projects/contracting">{t('view projects')}</a>
             <h3>{t('Contracting')}</h3>
           </div>
           <div className="card">
-            <a href='' className="image">
+            <a href="/projects/management" className="image">
               <img src={require('../img/projects 2.jpg')} alt="" />
             </a>
-            <a href="">{t('view projects')}</a>
+            <a href="/projects/management">{t('view projects')}</a>
             <h3>{t('Project Management & Engineering Consulting')}</h3>
           </div>
           <div className="card">
-            <a href='' className="image">
+            <a href="/projects/furniture" className="image">
               <img src={require('../img/projects 4.jpeg')} alt="" />
             </a>
-            <a href="">{t('view projects')}</a>
+            <a href="/projects/furniture">{t('view projects')}</a>
             <h3>{t('The furniture')}</h3>
           </div>
         </div>
