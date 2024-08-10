@@ -530,6 +530,8 @@
 .App.rtl .projects .sideTitle {
   border-radius: 50px 0 0 0;
   transform: translateX(2px);
+  padding-left: 70px;
+  text-align: left;
 }
 .projects .sideTitle:hover {
   font-weight: 900;
@@ -591,6 +593,9 @@
 @media(max-width:1600px) {
   .home .landing .swiper-slide {
     height: 580px;
+  }
+  .projects .sideTitle {
+    width: 38%;
   }
 }
 

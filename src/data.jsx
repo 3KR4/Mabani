@@ -13,7 +13,7 @@ export const contracting = Array.from({ length: 84 }, (_, index) => ({
   img: require(`./img/contracting/${index + 1}.jpeg`),
 }));
 
-export const Management = Array.from({ length: 7 }, (_, index) => ({
+export const management = Array.from({ length: 7 }, (_, index) => ({
   id: index + 1,
   img: require(`./img/Management/${index + 1}.jpg`),
 }));
