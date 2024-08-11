@@ -36,7 +36,7 @@ export default function Header() {
   const [hederFix, setHederFix] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setHederFix(window.scrollY > 300);
+    const handleScroll = () => setHederFix(window.scrollY > 40);
 
     window.addEventListener('scroll', handleScroll);
 

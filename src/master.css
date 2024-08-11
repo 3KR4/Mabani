@@ -315,23 +315,28 @@ header.fixedHed .nav {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 100;
   padding: 5px 0;
 }
 header .container {
   position: relative;
 }
 header .headerImg {
-  width: 120px;
+  width: 130px;
   position: absolute;
   opacity: 0;
   transition: 0.3s;
+  height: fit-content;
+  visibility: hidden;
 }
 header.fixedHed .headerImg {
   opacity: 1;
   right: 230px;
   height: fit-content;
   filter: drop-shadow(0 0 28px black);
+  visibility: visible;
+}
+header.fixedHed .bar {
+  margin-top: -45px;
 }
 header .bar {
   height: 27px;
@@ -339,6 +344,8 @@ header .bar {
   margin-bottom: 12px;
 }
 header .nav {
+  position: relative;
+  z-index: 100;
   background: var(--main-color);
   box-shadow: 0 19px 44px -4px #00000082;
 }
@@ -360,6 +367,7 @@ header .nav .changeLang img {
 header .nav .changeLang h4 {
   color: #c8c9ca;
   font-weight: 400;
+  display: none;
 }
 header .contnet {
   position: relative;
@@ -559,6 +567,18 @@ footer .links a {
   font-size: 34px;
 }
 
+@media(min-width:1600px) {
+  header .nav .changeLang h4 {
+    display: flex;
+  }
+}
+
+@media(max-width:1600px) {
+  header.fixedHed .headerImg {
+    right: 114px;
+  }
+}
+
 @media(max-width:1400px) {
   .project-page .managmementhold .sideTitle {
     width: 31%;
@@ -566,6 +586,9 @@ footer .links a {
 }
 
 @media(max-width:1200px) {
+  header .headerImg {
+    position: unset;
+  }
   .project-page .swiper .swiper-slide {
     height: 895px;
   }
@@ -583,22 +606,16 @@ footer .links a {
   }
   header .contnet .main img:first-child {
     width: 147px;
-}
-
-
-
+  }
   .build h1 {
     font-size: 37px;
     bottom: 9%;
     right: -2%;
   }
-
-
   footer .container {
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
-
   footer .middle {
     transform: translateX(0px);
   }
@@ -611,7 +628,15 @@ footer .links a {
   .project-page .managmementhold .sideTitle {
     width: 43%;
   }
-
+  header.fixedHed .headerImg {
+    right: 58px;
+  }
+  header .headerImg {
+    display: none;
+  }
+  header.fixedHed .headerImg {
+    display: flex;
+  }
 }
 
 
@@ -620,6 +645,9 @@ footer .links a {
     height: 42px;
     margin-bottom: 8px;
   }
+  header .links {
+    transform: translateX(0px);
+  } 
   header .contnet {
     padding-bottom: 2px;
   }
@@ -634,6 +662,14 @@ footer .links a {
   header .nav .changeLang  {
     right: 12px;
     top: -44px;
+  }
+  header.fixedHed .headerImg {
+    display: none;
+  }
+  header.fixedHed .nav .changeLang {
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 1%;
   }
   header .contnet .main img:last-child {
     width: 100%;

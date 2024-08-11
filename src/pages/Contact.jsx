@@ -25,11 +25,15 @@ const ContactForm = () => {
     <div className='contactUs container'>
               <h1>{t('Al Riyadh, Saudi Arabia')}</h1>
       <div className='mapHolder'>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d27628.34438364104!2d31.392415411669926!3d30.049964779134346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzDCsDAyJzI5LjEiTiAzMcKwMjMnNDYuNyJF!5e0!3m2!1sar!2seg!4v1715094139179!5m2!1sar!2seg&maptype=satellite"
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.126052839237!2d31.39813817538231!3d29.976315732974382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa8d097bdf7%3A0xc4f7c8654e4a74d!2sAl%20Fayoum%20University!5e0!3m2!1sen!2seg!4v1715094139179!5m2!1sen!2seg"
         width="100%" 
         height="100%" 
         loading="lazy"
         style={{border: '0'}}
+        allowFullScreen=""
+        aria-hidden="false"
+        tabIndex="0"
       />
       </div>
       <form onSubmit={handleSubmit(onSubmit)}>

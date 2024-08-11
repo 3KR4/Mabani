@@ -111,7 +111,7 @@
 /*! ============= Blogs =========== */
 
 .blogs {
-  margin-bottom: -100px;
+  margin-bottom: -39px;
   position: relative;
   background: var(--section-color);
 }
@@ -181,6 +181,9 @@
 }
 .blogs .container .card:hover p {
   font-weight: 700;
+}
+.App:has(.blogs) {
+  gap: 0;
 }
 
 /*! ============= SingleBlog =========== */
@@ -253,6 +256,9 @@
   .project-page .managmementhold .sideTitle {
     width: 43%;
   }
+  .blogs .container .card .image {
+    height: 375px;
+  }
 }
 @media(max-width:786px) {
   .contactUs {
@@ -293,5 +299,21 @@
   }
   .project-page:has(.managmementhold) h1:not(.managtitle) {
     max-width: 100%;
+  }
+  .blogs .container {
+    width: 94%;
+  }
+  .blogs .container {
+    padding: 52px 16px;
+  }
+  .blogs .backImg {
+    height: 166px;
+    background-position: center;
+  }
+  .blogs .container .card .image {
+    height: 216px;
+  } 
+  .blogSingle .container .card p {
+    width: 100%;
   }
 }

@@ -61,7 +61,7 @@ const Home = () => {
       </Swiper>
         <div className="text">
           <h1>{t('MABANI Company')}</h1>
-          <p>{t('Design& Execution, project management')}</p>
+          <p>{t('Design & Execution, project management')}</p>
         </div>
       </div>
       <div className="priceList">
