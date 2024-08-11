@@ -309,16 +309,29 @@ header {
   background: #22292f;
 }
 header.fixedHed {
+  margin-top: 105px;
+}
+header.fixedHed .nav {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 100;
+  padding: 5px 0;
 }
-header.fixedHed .bar{
-  display: none;
+header .container {
+  position: relative;
 }
-.App:has(header.fixedHed) {
-  margin-top: 320px;
+header .headerImg {
+  width: 120px;
+  position: absolute;
+  opacity: 0;
+  transition: 0.3s;
+}
+header.fixedHed .headerImg {
+  opacity: 1;
+  right: 230px;
+  height: fit-content;
+  filter: drop-shadow(0 0 28px black);
 }
 header .bar {
   height: 27px;
@@ -327,9 +340,6 @@ header .bar {
 }
 header .nav {
   background: var(--main-color);
-  position: sticky;
-  top: 0;
-  z-index: 100;
   box-shadow: 0 19px 44px -4px #00000082;
 }
 header .nav .container {
@@ -339,11 +349,17 @@ header .nav .container {
 }
 
 header .nav .changeLang {
-  display: flex;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 7px;
 }
 header .nav .changeLang img {
   width: 30px;
+}
+header .nav .changeLang h4 {
+  color: #c8c9ca;
+  font-weight: 400;
 }
 header .contnet {
   position: relative;
@@ -558,9 +574,6 @@ footer .links a {
   }
 }
 @media(max-width:992px) {
-  .App:has(header.fixedHed) {
-    margin-top: 305px;
-  }
   header .contnet .adds li:first-child,
   header .contnet .adds li:last-child {
     display: none;
@@ -603,10 +616,6 @@ footer .links a {
 
 
 @media(max-width:786px) {
-
-  .App:has(header.fixedHed) {
-    margin-top: 196px;
-  }
   header .bar {
     height: 42px;
     margin-bottom: 8px;

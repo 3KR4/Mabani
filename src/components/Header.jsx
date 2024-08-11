@@ -10,6 +10,7 @@ import snapChat from '../img/icons/Snapchat.svg'
 import twiter from '../img/icons/x twitter.svg'
 import YouTube from '../img/icons/Youtube.svg'
 import { IoCall } from "react-icons/io5";
+import { ReactComponent as MabaniIcon } from '../img/MABANI.svg';
 
 // img 
 import logo from '../img/logo.png'
@@ -35,7 +36,7 @@ export default function Header() {
   const [hederFix, setHederFix] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setHederFix(window.scrollY > 20);
+    const handleScroll = () => setHederFix(window.scrollY > 300);
 
     window.addEventListener('scroll', handleScroll);
 
@@ -63,7 +64,8 @@ export default function Header() {
               <a href="/blogs">{t('blogs')}</a>
               <a href="/about">{t('about us')}</a>
             </div>
-            <div className='changeLang' onClick={handleLanguageClick}>{language == "en" ? (<img src={arabic} alt="" />) : (<img src={english} alt="" />)}</div>
+            <MabaniIcon className='headerImg'/>
+            <div className='changeLang' onClick={handleLanguageClick}>{language == "en" ? (<><h4>العربية</h4> <img src={arabic} alt="" /></>) : (<><img src={english} alt="" /> <h4>English</h4></>)}</div>
           </div>
         </div>
         <div className="contnet">

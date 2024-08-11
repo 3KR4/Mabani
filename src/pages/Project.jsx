@@ -30,21 +30,21 @@ export default function Project() {
     <div className="project-page container">
       {project == 'management' && (
         <div className='managmementhold'>
-          <h1 className='managtitle'>{t('Project Management and Engineering Consulting')}</h1>
+          <h1 className='managtitle'>{t('PROJECT MANAGEMENT & ENGINEERING CONSULTING')}</h1>
           <h3 className="sideTitle">{t('Some Project Models')}</h3>
           <ul>
-            <li>{t('Jeddah Islamic Port Development Project')}</li>
-            <li>{t('Al-Qadeer Company Project in Riyadh')}</li>
-            <li>{t('Saloumi Company Project of Saudi Aramco in Tanajib')}</li>
-            <li>{t('Flood Infrastructure Project of Jeddah Municipality in Al-Huda and Al-Ajaweed Area')}</li>
-            <li>{t('Schools Project of Development Company in Al-Baha and Tabuk Area')}</li>
-            <li>{t('Residential Complex Project of Al-Aqaria Company in Riyadh')}</li>
-            <li>{t('Residential Complex Project of Al-Saeedan Company in Riyadh')}</li>
-            <li>{t('Residential Complex Project of Al-Mazini Company in Riyadh')}</li>
-            <li>{t('Residential Complex Project of National Housing Company in Riyadh')}</li>
-            <li>{t('Ministry of Health Hospital Project in Al-Dawasir')}</li>
-            <li>{t('Administrative Center Project of Riyadh Municipality')}</li>
-            <li>{t('Residential Complex Project of Al-Basatin Company in Riyadh')}</li>
+          <li>{t('Jeddah Islamic Port Development')}</li>
+            <li>{t('Al Qadiyah Co. in Riyadh')}</li>
+            <li>{t('Alsalomy Co. Project in Tanajib with ARAMCO')}</li>
+            <li>{t('Infrastructure Work in Jeddah (Alhuda & Alajaweed)')}</li>
+            <li>{t('Schools Projects in Tabuk & Baha')}</li>
+            <li>{t('Villas Compound of Al Akaria Co. in Riyadh')}</li>
+            <li>{t('Villas Compound of Al Al Saedan Co. in Riyadh')}</li>
+            <li>{t('Villas Compound of Almozaini Co. in Riyadh')}</li>
+            <li>{t('Villas Compound of National Housing Company in Riyadh')}</li>
+            <li>{t('Hospital of Wadi Aldawaser')}</li>
+            <li>{t('Administration Buildings Center of Rawda in Riyadh')}</li>
+            <li>{t('Villas Compound of Al Basateen Co. in Riyadh')}</li>
           </ul>
         </div>
       )}

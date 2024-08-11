@@ -61,7 +61,7 @@ const Home = () => {
       </Swiper>
         <div className="text">
           <h1>{t('MABANI Company')}</h1>
-          <p>{t('For project management and engineering consulting')}</p>
+          <p>{t('Design& Execution, project management')}</p>
         </div>
       </div>
       <div className="priceList">
@@ -100,25 +100,25 @@ const Home = () => {
           <span className='one'></span>
           <span className='two'></span>
           <span className='there'></span>
-          <h3 className="title">{t('Fields and specializations')}</h3>
+          <h3 className="title">{t('FIELDS & SPECIALIZATIONS')}</h3>
         </div>
         <div className="bottom">
           <h3 className='title'>{t('An integrated engineering team to create the required integrated designs at the highest level and best quality using the latest engineering programs needed in all specializations')}</h3>
           <div className="main">
             <div className="des-cont">
               <div>
-                <h4>{t('Contracting')}</h4>
+                <h4>{t('CONTRACTING')}</h4>
                 <ul>
-                  <li>{t('Construction')}</li>
-                  <li>{t('Infrastructure')}</li>
-                  <li>{t('Maintenance and Operation')}</li>
-                  <li>{t('Reinforcement and Restoration')}</li>
+                  <li>{t('Construction Work')}</li>
+                  <li>{t('Infrastructure Work')}</li>
+                  <li>{t('Operation & Maintenance Work')}</li>
+                  <li>{t('Strengthening & Renovation')}</li>
                 </ul>
               </div>
             </div>
             <div className="des-cont">
               <div>
-                <h4>{t('Design')}</h4>
+                <h4>{t('DESING')}</h4>
                 <ul>
                   <li>{t('Architectural')}</li>
                   <li>{t('Structural')}</li>
@@ -130,15 +130,15 @@ const Home = () => {
 
           </div>
           <div className="side">
-            <h4>{t('Project management & engineering consultations')}</h4>
-            <h4>{t('The furniture')}</h4>
+            <h4>{t('PROJECT MANAGEMENT & ENGINEERING CONSULTING')}</h4>
+            <h4>{t('THE FURNITURE')}</h4>
           </div>
         </div>
       </div>
       <div className="build ">
         <img className='engineer' src={require('../img/مهندس.png')} alt="" />
         <img className='zigzag' src={Zizag} alt="" />
-        <h1>{t('Project management & engineering consultations')}</h1>
+        <h1>{t('PROJECT MANAGEMENT & ENGINEERING CONSULTING')}</h1>
       </div>
       <div className="implement container">
         <div className="top">
@@ -165,28 +165,28 @@ const Home = () => {
               <img src={require('../img/projects 1.jpg')} alt="" />
             </a>
             <a href="/projects/design">{t('view projects')}</a>
-            <h3>{t('Design')}</h3>
+            <h3>{t('THE DESIGN')}</h3>
           </div>
           <div className="card">
             <a href="/projects/contracting" className="image">
               <img src={require('../img/projects 2.jpg')} alt="" />
             </a>
             <a href="/projects/contracting">{t('view projects')}</a>
-            <h3>{t('Contracting')}</h3>
+            <h3>{t('CONTRACTING')}</h3>
           </div>
           <div className="card">
             <a href="/projects/management" className="image">
               <img src={require('../img/projects 2.jpg')} alt="" />
             </a>
             <a href="/projects/management">{t('view projects')}</a>
-            <h3>{t('Project Management & Engineering Consulting')}</h3>
+            <h3>{t('PROJECT MANAGEMENT & ENGINEERING CONSULTING')}</h3>
           </div>
           <div className="card">
             <a href="/projects/furniture" className="image">
               <img src={require('../img/projects 4.jpeg')} alt="" />
             </a>
             <a href="/projects/furniture">{t('view projects')}</a>
-            <h3>{t('The furniture')}</h3>
+            <h3>{t('THE FURNITURE')}</h3>
           </div>
         </div>
         <h1>{t('With us your dream comes true')}</h1>
