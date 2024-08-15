@@ -4,6 +4,7 @@ import '../css/other.css';
 import zigzag from '../img/Zizag.svg';
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
+import { t } from 'i18next';
 
 
 export default function Blogs() {
@@ -53,7 +54,7 @@ export default function Blogs() {
               </a>
             ))
           ) : (
-            <p>There are no Blogs yet</p>
+            <p>{t('There are no Blogs yet')}</p>
           )}
         </div>
         {Array.isArray(displayBlogs) && displayBlogs.length > 0 && (

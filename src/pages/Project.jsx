@@ -31,7 +31,7 @@ export default function Project() {
       {project == 'management' && (
         <div className='managmementhold'>
           <h1 className='managtitle'>{t('PROJECT MANAGEMENT & ENGINEERING CONSULTING')}</h1>
-          <h3 className="sideTitle">{t('Some Project Models')}</h3>
+          <h3 className="sideTitle">{t('Some project Models')}</h3>
           <ul>
           <li>{t('Jeddah Islamic Port Development')}</li>
             <li>{t('Al Qadiyah Co. in Riyadh')}</li>
@@ -48,7 +48,7 @@ export default function Project() {
           </ul>
         </div>
       )}
-      <h1>{t(project == 'furniture' ? 'The furniture' : project == 'design' ? 'the design' : project == 'contracting' ? "Contracting" : "Project Management and Engineering Consulting" )}</h1>
+      <h1>{t(project == 'furniture' ? 'THE FURNITURE' : project == 'design' ? 'THE DESIGN' : project == 'contracting' ? "CONTRACTING" : "Project Management and Engineering Consulting" )}</h1>
       <Swiper
         modules={[Navigation, Autoplay]}
         spaceBetween={20}

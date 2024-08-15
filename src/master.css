@@ -752,4 +752,18 @@ footer .links a {
 }
 @media(max-width:400px) {
 
+  .project-page .managmementhold .sideTitle {
+    width: 89%;
+  }
+  .project-page h1 {
+    font-size: 22px;
+  }
+  .project-page:has(.managmementhold) h1:not(.managtitle) {
+    font-size: 25px;
+    padding: 5px 12px;
+  }
+  .contactUs form .hold {
+    gap: 6px;
+    flex-direction: column;
+  }
 }

@@ -8,32 +8,35 @@ const ContactForm = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
 
   const onSubmit = (data) => {
-    console.log('Submitted data:', data); // Check if data is as expected
-    emailjs.send('service_hbui60s', 'template_xsgfqu7', data, 'v5g-oKR19wGPmZW7d')
+
+    const emailData = {
+      ...data,
+      to_name: 'Mabani Company',
+      from_name: data.name,
+    };
+
+    emailjs.send('service_m0wyedj', 'template_a3tl5b3', emailData, 'Y8vwhkBPJ1j9SMAXP')
       .then((result) => {
-        console.log(result.text);
-        alert('Message Sent Successfully');
+      alert('Message Sent Successfully');
       }, (error) => {
-        console.log(error.text);
         alert('Failed to Send Message');
       });
   };
 
-  console.log('Form errors:', errors); // Log errors object
 
   return (
     <div className='contactUs container'>
-              <h1>{t('Al Riyadh, Saudi Arabia')}</h1>
+      <h1>{t('Al Riyadh, Saudi Arabia')}</h1>
       <div className='mapHolder'>
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.126052839237!2d31.39813817538231!3d29.976315732974382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa8d097bdf7%3A0xc4f7c8654e4a74d!2sAl%20Fayoum%20University!5e0!3m2!1sen!2seg!4v1715094139179!5m2!1sen!2seg"
-        width="100%" 
-        height="100%" 
-        loading="lazy"
-        style={{border: '0'}}
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4682.211088329232!2d46.703265599999995!3d24.568637499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f0f07aa334d69%3A0x832b8cb46610a22c!2zSFA5MytGODLYjCDYp9mE2LHZitin2LYgMTQ3MTLYjCDYp9mE2LPYudmI2K_Zitip!5e1!3m2!1sar!2seg!4v1723397850739!5m2!1sar!2seg&zoom=30"
+        width="100%"
+        height="100%"
+        style={{ border: 0 }}
         allowFullScreen=""
-        aria-hidden="false"
-        tabIndex="0"
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        title="Google Maps"
       />
       </div>
       <form onSubmit={handleSubmit(onSubmit)}>

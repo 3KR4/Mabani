@@ -660,6 +660,9 @@
     width: 90%;
     max-width: unset;
   }
+  .specialization .bottom .title {
+    width: 66%;
+  }
 }
 
 @media(max-width:786px)  {
@@ -773,5 +776,24 @@
     left: 3%;
     width: 43%;
     margin-top: 60px;
+  }
+}
+
+
+@media(max-width:400px) {
+  .specialization .top .title {
+    font-size: 23px;
+  }
+  .App .build h1 {
+    font-size: 17px !important;
+    bottom: 7%;
+    right: 1% !important;
+    max-width: 225px !important;
+  }
+  .App.rtl .build h1  {
+    right: 3% !important;
+  }
+  .projects .sideTitle {
+    padding: 9px 40px 9px 0;
   }
 }
