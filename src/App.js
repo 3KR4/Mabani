@@ -1,18 +1,16 @@
 import './master.css';
-import React, { useState, useEffect, lazy, Suspense } from 'react';
+import React, { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
-
 import { useAllContext } from "./Context";
+import Header from './components/Header';
+import Footer from './components/Footer';
 
-import Header from './components/Header'
-import Footer from './components/Footer'
-
-const Home = lazy(() => import('./pages/Home'));
-const About = lazy(() => import('./pages/About'));
-const Contact = lazy(() => import('./pages/Contact'));
-const Blogs = lazy(() => import('./pages/Blogs'));
+const Home       = lazy(() => import('./pages/Home'));
+const About      = lazy(() => import('./pages/About'));
+const Contact    = lazy(() => import('./pages/Contact'));
+const Blogs      = lazy(() => import('./pages/Blogs'));
 const SingleBlog = lazy(() => import('./pages/SingleBlog'));
-const Project = lazy(() => import('./pages/Project'));
+const Project    = lazy(() => import('./pages/Project'));
 
 function App() {
   const { direction } = useAllContext();
@@ -35,5 +33,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

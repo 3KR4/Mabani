@@ -12,11 +12,11 @@ const About = () => {
   return (
     <div className="about">
       <div className="backImg">
-        <img src={require('../img/about1.jpg')} alt="" />
-        <img src={require('../img/about3.png')} alt="" />
-        <img src={require('../img/bar.png')} alt="" />
-        <img src={require('../img/about2.png')} alt="" />
-        <img src={require('../img/about4.png')} alt="" />
+        <img src={require('../img/about1.jpg')} alt="background1" />
+        <img src={require('../img/about3.png')} alt="background2" />
+        <img src={require('../img/bar.png')} alt="background3" />
+        <img src={require('../img/about2.png')} alt="background4" />
+        <img src={require('../img/about4.png')} alt="background5" />
       </div>
       <div className="top container">
         <div className="head">
@@ -29,7 +29,7 @@ const About = () => {
           src={language === 'ar' 
             ? require('../img/Mask Group 16.png') 
             : require('../img/Mask Group 16-en.png')} 
-          alt="" 
+          alt="Mask Group" 
         />
       </div>
       <div className="iso container">
@@ -40,11 +40,11 @@ const About = () => {
           {t('Classification and ISO Certificates')}
         </div>
         <div className="holder">
-          <img src={require('../img/ISO 3.png')} alt="" />
-          <img src={require('../img/ISO 2.png')} alt="" />
-          <img src={require('../img/ISO 1.png')} alt="" />
+          <img src={require('../img/ISO 3.png')} alt="ISO 3" />
+          <img src={require('../img/ISO 2.png')} alt="ISO 2" />
+          <img src={require('../img/ISO 1.png')} alt="ISO 1" />
         </div>
-        <img className='lastiso' src={require('../img/CERTEFICATE.jpg')} alt="" />
+        <img className='lastiso' src={require('../img/CERTEFICATE.jpg')} alt="CERTEFICATE" />
       </div>
     </div>
   );

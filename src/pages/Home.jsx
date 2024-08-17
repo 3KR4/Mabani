@@ -53,10 +53,10 @@ const Home = () => {
         <SwiperSlide><img src={require('../img/landing 4.jpg')} /></SwiperSlide>
 
         <div ref={prevRef} className="custom-prev">
-          <img src={require('../img/arrowleft.png')} alt="" />
+          <img src={require('../img/arrowleft.png')} alt="arrowleft" />
         </div>
         <div ref={nextRef} className="custom-next">
-          <img src={require('../img/arrowright.png')} alt="" />
+          <img src={require('../img/arrowright.png')} alt="arrowright" />
         </div>
       </Swiper>
         <div className="text">
@@ -65,11 +65,11 @@ const Home = () => {
         </div>
       </div>
       <div className="priceList">
-        <img className='bigImg' src={require('../img/pricelist.png')} alt="" />
-        <img className='zigzag' src={Zizag} alt="" />
+        <img className='bigImg' src={require('../img/pricelist.png')} alt="pricelist" />
+        <img className='zigzag' src={Zizag} alt="zigzag" />
         <a href='/contact' className="price">
           <div className="image">
-            <img src={language == 'ar' ? orderprice : orderprice2} alt="" />
+            <img src={language == 'ar' ? orderprice : orderprice2} alt="orderprice" />
           </div>
           <IoTriangleSharp className='shape'/>
         </a>
@@ -82,15 +82,15 @@ const Home = () => {
         </div>
         <div className="holder container">
           <div className="card">
-            <img src={require('../img/idea 1.jpg')} alt="" />
+            <img src={require('../img/idea 1.jpg')} alt="idea 1" />
             <p>{t('Implementing projects with the highest quality and at the appropriate price, while adhering to the agreed upon deadlines without delay')}</p>
           </div>
           <div className="card">
-            <img src={require('../img/idea 2.jpg')} alt="" />
+            <img src={require('../img/idea 2.jpg')} alt="idea 2" />
             <p>{t('We study projects with high professionalism through a specialized team of engineers and consultants')}</p>
           </div>
           <div className="card">
-            <img src={require('../img/idea 3.jpg')} alt="" />
+            <img src={require('../img/idea 3.jpg')} alt="idea 3" />
             <p>{t('We plan the living spaces in your home or company with interior designs that utilize all spaces creatively')}</p>
           </div>
         </div>
@@ -136,8 +136,8 @@ const Home = () => {
         </div>
       </div>
       <div className="build ">
-        <img className='engineer' src={require('../img/مهندس.png')} alt="" />
-        <img className='zigzag' src={Zizag} alt="" />
+        <img className='engineer' src={require('../img/مهندس.png')} alt="مهندس" />
+        <img className='zigzag' src={Zizag} alt="Zizag" />
         <h1>{t('PROJECT MANAGEMENT & ENGINEERING CONSULTING')}</h1>
       </div>
       <div className="implement container">
@@ -162,28 +162,28 @@ const Home = () => {
         <div className="holder container">
           <div className="card">
             <a href="/projects/design" className="image">
-              <img src={require('../img/projects 1.jpg')} alt="" />
+              <img src={require('../img/projects 1.jpg')} alt="projects 1" />
             </a>
             <a href="/projects/design">{t('view projects')}</a>
             <h3>{t('THE DESIGN')}</h3>
           </div>
           <div className="card">
             <a href="/projects/contracting" className="image">
-              <img src={require('../img/projects 2.jpg')} alt="" />
+              <img src={require('../img/projects 2.jpg')} alt="projects 2" />
             </a>
             <a href="/projects/contracting">{t('view projects')}</a>
             <h3>{t('CONTRACTING')}</h3>
           </div>
           <div className="card">
             <a href="/projects/management" className="image">
-              <img src={require('../img/projects 2.jpg')} alt="" />
+              <img src={require('../img/projects 2.jpg')} alt="projects 2" />
             </a>
             <a href="/projects/management">{t('view projects')}</a>
             <h3>{t('PROJECT MANAGEMENT & ENGINEERING CONSULTING')}</h3>
           </div>
           <div className="card">
             <a href="/projects/furniture" className="image">
-              <img src={require('../img/projects 4.jpeg')} alt="" />
+              <img src={require('../img/projects 4.jpeg')} alt="projects 4" />
             </a>
             <a href="/projects/furniture">{t('view projects')}</a>
             <h3>{t('THE FURNITURE')}</h3>

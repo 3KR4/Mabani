@@ -28,7 +28,7 @@ export default function SingleBlog() {
 
   return (
     <div className='blogSingle blogs'>
-      <img className='zigzag' src={zigzag} alt="" />
+      <img className='zigzag' src={zigzag} alt="zigzag" />
       <div className="container">
         <div className="card">
           <div className="image">

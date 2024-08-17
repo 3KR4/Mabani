@@ -40,7 +40,7 @@ export default function Blogs() {
   return (
     <div className='blogs'>
       <div className="backImg"></div>
-      <img className='zigzag' src={zigzag} alt="" />
+      <img className='zigzag' src={zigzag} alt="zigzag" />
       <div className="container">
         <div className="holder">
           {Array.isArray(displayBlogs) && displayBlogs.length > 0 ? (
