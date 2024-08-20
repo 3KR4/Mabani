@@ -57,7 +57,7 @@ export default function Blogs() {
             <p>{t('There are no Blogs yet')}</p>
           )}
         </div>
-        {Array.isArray(displayBlogs) && displayBlogs.length > 0 && (
+        {Array.isArray(displayBlogs) && displayBlogs.length > 4 && (
           <ReactPaginate
             previousLabel={<MdKeyboardDoubleArrowLeft />}
             nextLabel={<MdKeyboardDoubleArrowRight />}

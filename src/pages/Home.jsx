@@ -169,7 +169,7 @@ const Home = () => {
           </div>
           <div className="card">
             <a href="/projects/contracting" className="image">
-              <img src={require('../img/projects 2.jpg')} alt="projects 2" />
+              <img src={require('../img/projects 3.jpg')} alt="projects 2" />
             </a>
             <a href="/projects/contracting">{t('view projects')}</a>
             <h3>{t('CONTRACTING')}</h3>

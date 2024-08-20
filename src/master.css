@@ -45,6 +45,33 @@ body {
   background: var(--main-color);
   border-radius: 5rem;
 }
+
+/* Mozilla browsers (Firefox) */
+::-moz-scrollbar {
+  width: 10px;
+  height: 8px;
+}
+::-moz-scrollbar-track {
+  background: transparent;
+}
+::-moz-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 5rem;
+}
+
+/* Microsoft browsers (Edge, IE) */
+::-ms-scrollbar {
+  width: 10px;
+  height: 8px;
+}
+::-ms-scrollbar-track {
+  background: transparent;
+}
+::-ms-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 5rem;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -86,6 +113,7 @@ button {
   background: transparent;
   border: none;
   cursor: pointer;
+  transform: translateY(-20px);
 }
 
 .container {
@@ -470,6 +498,19 @@ footer .links a {
 
 /*! ========== project ========== */ 
 
+.project-page .managmementhold{
+  height: fit-content;
+  border-bottom: 40px solid var(--main-color);
+  margin-bottom: 42px;
+}
+.project-page .managmementhold img {
+  width: 100%;
+  height: 85vh;
+  position: absolute;
+  opacity: 0.4;
+  z-index: -1;
+  object-fit: cover;
+}
 
 .project-page h1 {
   width: 100%;
@@ -530,19 +571,33 @@ footer .links a {
   background: #d3d3d38f;
   width: 24%;
   text-align: right;
-  padding: 10px 43px;
+  padding: 0 43px;
+  height: 70px;
   font-size: 27px;
   position: absolute;
   left: 0;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-page .managmementhold .sideTitle:hover {
+  font-size: 29px;
+  border-radius: 52px 0 0 50px;
+  background: #a2a2a2;
+  color: white;
+}
+.App.ltr .project-page .managmementhold .sideTitle:hover {
+  border-radius: 0 52px 52px 0;
 }
 .project-page .managmementhold ul {
-  display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 2px;
   font-size: 18px;
   font-weight: 600;
-  margin: 174px 18px 49px;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
 }
 .project-page .managmementhold ul li {
   list-style: disc;
@@ -595,6 +650,9 @@ footer .links a {
   .project-page .managmementhold .sideTitle {
     width: 37%;
   }
+  .project-page .managmementhold ul {
+    padding: 0 50px;
+  }
 }
 @media(max-width:992px) {
   header .contnet .adds li:first-child,
@@ -636,6 +694,12 @@ footer .links a {
   }
   header.fixedHed .headerImg {
     display: flex;
+  }
+  .project-page .managmementhold ul {
+    height: 56vh;
+  }
+  .project-page .managmementhold img {
+    height: 72vh;
   }
 }
 
@@ -689,8 +753,6 @@ footer .links a {
     display: none;
   }
 
-
-
   .custom-prev img,
   .custom-next img {
     width: 25px !important;
@@ -730,6 +792,8 @@ footer .links a {
     margin: 25px 0 35px;
     padding: 0 0;
     font-size: 29px;
+    width: 90%;
+    margin: 25px auto;
   }
   .project-page .swiper {
     max-width: 100%;
@@ -749,6 +813,14 @@ footer .links a {
     height: 30px;
     padding: 5px;
   }
+  .project-page .managmementhold ul {
+    padding: 0 34px 0 15px;
+    height: 103vh;
+    margin-bottom: -49px;
+  } 
+  .project-page .managmementhold img {
+    display: none;
+  }
 }
 @media(max-width:400px) {
 
@@ -765,5 +837,8 @@ footer .links a {
   .contactUs form .hold {
     gap: 6px;
     flex-direction: column;
+  }
+  .project-page .managmementhold ul {
+    height: 130vh;
   }
 }

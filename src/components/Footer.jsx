@@ -38,7 +38,7 @@ export default function Footer() {
             <div className="phone"><IoCall/> +966550426428</div>
             <div className="phone"><IoCall/> +966531039880</div>
           </div>
-          <a href="mailto:mohamedms8989@gmail.com">mohamedms8989@gmail.com</a>
+          <a href="mailto:m.abdelrahman@mabanialtatweer.com">m.abdelrahman@mabanialtatweer.com</a>
         </div>
         <div className="middle">
           <img src={require('../img/logo.png')} alt="" />

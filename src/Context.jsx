@@ -11,6 +11,10 @@ export function Context({ children }) {
 
 
   useEffect(() => {
+    if (localStorage.i18nextLng == 'en-US') {
+      setLanguage('ar');
+      i18n.changeLanguage("ar")
+    }
     setLanguage(i18n.language); // Sync state with i18n language on component mount
   }, [i18n.language]);
 
@@ -24,3 +28,5 @@ export function Context({ children }) {
 export function useAllContext() {
   return useContext(AllContext);
 }
+
+
